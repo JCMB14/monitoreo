@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/style-login.css">
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="../server/publico/index.php?action=register" method="POST">
+            <div class="logo">
+                <img src="img/logo.png" alt="EcoEnergy Logo">
+            </div>
+            <h1>Create a new account</h1>
+            <p class="create-account">
+                Already have an account? <a href="login.html">Sign in</a>
+            </p>
+            <div class="input-group">
+                <label for="fullname">Fullname</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your fullname">
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="btn">Create Account</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/*index*/
+a {
+  text-decoration: none;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header_index {
+  background-color: #00a65a;
+  padding: 20px;
+}
+
+.content_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_logo img {
+  width: 100px;
+}
+
+.nav_login a {
+  color: #fff;
+  font-size: 16px;
+  margin-left: 20px;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav_login .login {
+  background-color: #00a65a;
+}
+
+.nav_login .signin {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.nav_login a:hover {
+  background-color: #fff;
+  color: #00a65a;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.intro h1 {
+  color: #00a65a;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.features {
+  max-width: 800px;
+  width: 100%;
+}
+
+.features h2 {
+  font-size: 28px;
+  color: #00a65a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.feature h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #666;
+}
+
+/*welcome*/
+.body-welcome {
+  display: flex;
+}
+aside .side ul li a{
+  font-weight: 600;
+}
+.content {
+  flex: 1;
+  margin-left: 250px;
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
+.content h1 {
+  font-size: 30px;
+}
+.content p {
+  padding: 20px 0 20px 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.grid-item i {
+  margin-bottom: 10px;
+  color: #4a5568;
+}
+
+.grid-item span {
+  font-size: 1.2em;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+aside .side{
+    background: #20ff9b;
+}
+aside .side ul li a{
+    transition: ease 0.5s;
+}
+
+/*electrodomesticos*/
+.body_electro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container_electro {
+  background-color: #f5fbe1;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding-top: 100px;
+}
+.container_electro img {
+  width: 80px;
+  padding-bottom: 10px;
+}
+.container_electro h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.container_electro input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.container_electro label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.container_electro button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container_electro button:hover {
+  background-color: #218838;
+}
+.section_electro{
+  display: flex;
+  flex-direction: row;
+}
+.electros{
+  display: flex;
+  flex-direction: column;
+  max-height: 1000px; 
+  max-width: 500px;
+  overflow-y: auto;
+}
+#applianceList div {
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+#applianceList h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+#applianceList p {
+  margin: 5px 0;
+  color: #666666;
+}
+
+#applianceList button {
+  background-color: #2bff00;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#applianceList button:hover {
+  background-color: #00b348;
+}
+/*modelo*/
+
+.body_modelo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container_modelo {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin-left: 250px;
+  transition: margin-left 0.3s;
+}
+
+.dropdown_modelo {
+  margin-bottom: 20px;
+}
+
+#ai-model-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.model-description {
+  border-top: 1px solid #ddd;
+}
+
+.model {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.model h2 {
+  margin-top: 0;
+}
+
+.model p {
+  margin: 0;
+  color: #555;
+}
